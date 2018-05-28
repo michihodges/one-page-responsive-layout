@@ -3,3 +3,15 @@ html {
     background-repeat: no-repeat;
     min-height: 4449px;
 }
+
+body {
+    margin: 0;
+}
+
+nav {
+    background-color: #383E4C;
+}
+
+nav ul {
+    margin: 0;
+}
