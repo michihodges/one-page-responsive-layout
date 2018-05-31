@@ -10,9 +10,18 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+header {
+  background-image: url("img/bg-1.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 60px;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
 nav {
-    /*background-color: #383E4C;*/
-    /*background-color: cyan;*/
+    background-color: #383E4C;
 }
 
 nav ul {
