@@ -10,7 +10,7 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-header {
+/* header {
   background-image: url("img/bg-1.jpg");
   background-position: center center;
   background-repeat: no-repeat;
@@ -18,10 +18,10 @@ header {
   margin-bottom: 60px;
   background-attachment: fixed;
   background-size: 100% 100%;
-}
+} */
 
 nav {
-    background-color: #383E4C;
+    /* background-color: #383E4C; */
 }
 
 nav ul {
@@ -32,7 +32,7 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    margin: 10px;
+    margin: 10px 8px 0;
     border: 1px solid #646d7c;
     padding: 15px 25px;
 }
