@@ -20,27 +20,31 @@ body {
   background-size: 100% 100%;
 } */
 
-nav {
+header nav {
     /* background-color: #383E4C; */
 }
 
-nav ul {
+header nav ul {
     text-align: center;
     margin: 0;
     padding: 0;
 }
 
-nav ul li {
+header nav ul li {
     display: inline-block;
     margin: 10px 8px 0;
     border: 1px solid #646d7c;
     padding: 15px 25px;
 }
 
-nav ul li a {
+header nav ul li a {
     text-decoration: none;
     text-transform: capitalize;
     font-size: 20px;
     color: #fff;
     line-height: 20px;
+}
+
+header h1 {
+    text-transform: uppercase;
 }
