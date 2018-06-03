@@ -10,29 +10,30 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-/* header {
+header {
   background-image: url("img/bg-1.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
   background-attachment: fixed;
   background-size: 100% 100%;
-} */
+}
 
 header nav {
-    /* background-color: #383E4C; */
+    background-color: #383E4C;
+    margin: 10px 0;
 }
 
 header nav ul {
     text-align: center;
-    margin: 0;
-    padding: 0;
+    /* margin:0; */
+    /* padding: 0; */
 }
 
 header nav ul li {
     display: inline-block;
-    margin: 10px 8px 0;
+    margin: 0 8px;
     border: 1px solid #646d7c;
     padding: 15px 25px;
 }
