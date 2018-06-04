@@ -47,5 +47,15 @@ header nav ul li a {
 }
 
 header h1 {
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
     text-transform: uppercase;
+}
+
+header h2 {
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
 }
