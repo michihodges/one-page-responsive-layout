@@ -10,38 +10,40 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-header {
-  background-image: url("img/bg-1.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-size: 100% 100%;
-}
-
-header nav {
+nav {
+    position: fixed;
+    width: 100%;
     background-color: #383E4C;
 }
 
-header nav ul {
+nav ul {
     text-align: center;
     margin:0;
     padding: 0;
 }
 
-header nav ul li {
+nav ul li {
     display: inline-block;
     margin: 10px 8px;
     border: 1px solid #646d7c;
     padding: 15px 25px;
 }
 
-header nav ul li a {
+nav ul li a {
     text-decoration: none;
     text-transform: capitalize;
     font-size: 20px;
     color: #fff;
     line-height: 20px;
+}
+
+header {
+  /* background-image: url("img/bg-1.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-size: 100% 100%; */
 }
 
 header h1 {
