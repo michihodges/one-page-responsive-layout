@@ -11,9 +11,12 @@ body {
 }
 
 nav {
-    position: fixed;
-    width: 100%;
     background-color: #383E4C;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 0 14px 0;
+    z-index: 1;
 }
 
 nav ul {
@@ -24,7 +27,7 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    margin: 10px 8px;
+    margin: 0 8px;
     border: 1px solid #646d7c;
     padding: 15px 25px;
 }
@@ -42,18 +45,29 @@ header {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 235px 0;
+  margin-bottom: 60px;
   background-attachment: fixed;
   background-size: 100% 100%; */
 }
 
-header h1 {
+header img {
+    position: relative;
+    top: 0;
+}
+
+header div {
+    padding: 285px 0;
+}
+
+header div h1 {
     font-weight: 400;
     color: #fff;
     text-align: center;
     text-transform: uppercase;
 }
 
-header h2 {
+header div h2 {
     font-weight: 400;
     color: #fff;
     text-align: center;
