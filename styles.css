@@ -60,6 +60,7 @@ header {
 
 header div {
     position: relative;
+    text-align: center;
     padding: 285px 0;
     z-index: 1;
 }
@@ -67,13 +68,11 @@ header div {
 header div h1 {
     font-weight: 400;
     color: #fff;
-    text-align: center;
     text-transform: uppercase;
 }
 
 header div h2 {
     font-weight: 400;
     color: #fff;
-    text-align: center;
     text-transform: capitalize;
 }
