@@ -12,24 +12,27 @@ body {
 
 nav {
     background-color: #383E4C;
+    /* background-color: magenta; */
     position: fixed;
     top: 0;
+    text-align: center;
     width: 100%;
-    padding: 10px 0 14px 0;
-    z-index: 1;
+    padding: 10px 0 16px 0;
+    z-index: 5;
 }
 
 nav ul {
-    text-align: center;
-    margin:0;
+    display: table;
+    margin: 0 auto;
     padding: 0;
 }
 
 nav ul li {
-    display: inline-block;
-    margin: 0 8px;
+    display: inline;
+    float: left;
+    margin: 0 10px;
     border: 1px solid #646d7c;
-    padding: 15px 25px;
+    padding: 15px 25px 13px;
 }
 
 nav ul li a {
@@ -40,7 +43,7 @@ nav ul li a {
     line-height: 20px;
 }
 
-header {
+/* header {
   background-image: url("img/bg-1.jpg");
   background-position: center center;
   background-repeat: no-repeat;
@@ -49,14 +52,15 @@ header {
   margin-bottom: 60px;
   background-attachment: fixed;
   background-size: 100% 100%;
-}
+} */
 
-/* header img {
-    position: fixed;
+header img {
+    /* position: fixed; */
+    position: relative;
     width: 100%;
     height: auto;
-    top: 0;
-} */
+    top: -104px;
+}
 
 header div {
     position: relative;
