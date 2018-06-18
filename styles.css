@@ -57,9 +57,10 @@ nav ul li a {
 header img {
     /* position: fixed; */
     position: relative;
-    width: 100%;
-    height: auto;
-    top: -104px;
+    width: auto;
+    height: 538px;
+    /* top: -104px; */
+    top: 77px;
 }
 
 header div {
