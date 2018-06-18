@@ -63,7 +63,7 @@ header img {
     top: 77px;
 }
 
-header div {
+header .intro {
     position: relative;
     text-align: center;
     padding: 285px 0;
