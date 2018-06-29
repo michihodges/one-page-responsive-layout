@@ -56,11 +56,23 @@ nav ul li a {
 
 header img {
     /* position: fixed; */
-    position: relative;
-    width: auto;
-    height: 538px;
+    /*position: relative;*/
+    /*width: auto;*/
+    /*height: 538px;*/
     /* top: -104px; */
-    top: 77px;
+    /*top: 77px;*/
+}
+
+header .img-container {
+    /* position: fixed; */
+    position: relative;
+    width: 100%;
+    height: auto;
+    /* top: -104px; */
+}
+
+header .img-container img {
+    display: inline-block;
 }
 
 header .intro {
