@@ -43,7 +43,7 @@ nav ul li a {
     line-height: 20px;
 }
 
-/* header {
+header {
   background-image: url("img/bg-1.jpg");
   background-position: center center;
   background-repeat: no-repeat;
@@ -51,28 +51,7 @@ nav ul li a {
   padding: 235px 0;
   margin-bottom: 60px;
   background-attachment: fixed;
-  background-size: 100% 100%;
-} */
-
-header img {
-    /* position: fixed; */
-    /*position: relative;*/
-    /*width: auto;*/
-    /*height: 538px;*/
-    /* top: -104px; */
-    /*top: 77px;*/
-}
-
-header .img-container {
-    /* position: fixed; */
-    position: relative;
-    width: 100%;
-    height: auto;
-    /* top: -104px; */
-}
-
-header .img-container img {
-    display: inline-block;
+  background-size: 100% auto;
 }
 
 header .intro {
