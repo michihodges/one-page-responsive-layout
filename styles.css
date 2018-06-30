@@ -48,8 +48,8 @@ header {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 235px 0;
-  margin-bottom: 60px;
+  /* padding: 235px 0; */
+  /* margin-bottom: 60px; */
   background-attachment: fixed;
   background-size: 100% auto;
 }
@@ -61,13 +61,17 @@ header .intro {
     z-index: 1;
 }
 
-header div h1 {
+header .intro h1 {
+    margin: 0;
     font-weight: 400;
+    font-size: 70px;
     color: #fff;
     text-transform: uppercase;
+    text-shadow: 2px 2px #000;
 }
 
-header div h2 {
+header .intro h2 {
+    margin: 0;
     font-weight: 400;
     color: #fff;
     text-transform: capitalize;
