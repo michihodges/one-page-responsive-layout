@@ -52,13 +52,13 @@ header {
   /* margin-bottom: 60px; */
   background-attachment: fixed;
   background-size: 100% auto;
+  opacity: 0.5;
 }
 
 header .intro {
     position: relative;
     text-align: center;
-    padding: 285px 0;
-    z-index: 1;
+    padding: 245px 0;
 }
 
 header .intro h1 {
@@ -75,4 +75,13 @@ header .intro h2 {
     font-weight: 400;
     color: #fff;
     text-transform: capitalize;
+    top: -2px;
+    position: relative;
+    font-size: 1.5em;
+    letter-spacing: 0.02em;
+}
+
+main {
+    background-color: white;
+    padding: 100px;
 }
