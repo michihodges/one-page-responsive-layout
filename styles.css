@@ -45,20 +45,21 @@ nav ul li a {
 
 header {
   background-image: url("img/bg-1.jpg");
-  background-position: center center;
+  /* background-position: center center; */
+  background-position: 100% 27%;
   background-repeat: no-repeat;
   background-size: cover;
   /* padding: 235px 0; */
   /* margin-bottom: 60px; */
   background-attachment: fixed;
   background-size: 100% auto;
-  opacity: 0.5;
+  /* opacity: 0.5; */
 }
 
 header .intro {
     position: relative;
     text-align: center;
-    padding: 245px 0;
+    padding: 245px 0 240px;
 }
 
 header .intro h1 {
@@ -82,6 +83,7 @@ header .intro h2 {
 }
 
 main {
+    position: relative;
     background-color: white;
-    padding: 100px;
+    padding: 70px 100px;
 }
