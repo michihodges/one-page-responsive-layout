@@ -85,5 +85,71 @@ header .intro h2 {
 main {
     position: relative;
     background-color: white;
-    padding: 70px 100px;
+    /* padding: 70px 100px; */
+    padding: 70px 0;
+    /* text-align: center; */
+}
+
+main section div {
+    display: table;
+    margin: 0 auto;
+    text-align: center;
+}
+
+main section div .col-3 {
+    /* display: inline-block; */
+    float: left;
+    max-width: 360px;
+    margin: 0 15px;
+    background-color: #f2f2f2;
+}
+
+main section div h3, p {
+    padding: 0 20px;
+    text-align: left;
+}
+
+main section div h3 {
+    font-size: 20px;
+    color: #666;
+}
+
+main section div p {
+    margin: 0;
+    padding-bottom: 35px;
+    font-size: 14px;
+    line-height: 1.6em;
+    color: #333;
+}
+
+main section div .green-h2 {
+    color: #178A27;
+}
+
+main section div .blue-h2 {
+    color: #1686C1;
+}
+
+main section div button {
+    margin: 0 0 40px 0;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+    font-size: 18px;
+}
+
+main section div .btn {
+    color: white;
+}
+
+main section div .green-btn {
+    background-color: #178A27;
+}
+
+main section div .blue-btn {
+    background-color: #1686C1;
+}
+
+main section div .red-btn {
+    background-color: #852406;
 }
