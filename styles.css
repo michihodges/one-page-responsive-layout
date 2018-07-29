@@ -85,22 +85,18 @@ header .intro h2 {
 main {
     position: relative;
     background-color: white;
-    /* padding: 70px 100px; */
-    padding: 70px 0;
-    /* text-align: center; */
 }
 
-main section div {
+main section .row-1 {
     display: table;
     margin: 0 auto;
     text-align: center;
 }
 
 main section div .col-3 {
-    /* display: inline-block; */
     float: left;
     max-width: 360px;
-    margin: 0 15px;
+    margin: 70px 15px 0;
     background-color: #f2f2f2;
 }
 
@@ -152,4 +148,11 @@ main section div .blue-btn {
 
 main section div .red-btn {
     background-color: #852406;
+}
+
+main section .col-2 {
+    float: left;
+    /* max-width: 360px;
+    margin: 70px 15px 0;
+    background-color: #f2f2f2; */
 }
