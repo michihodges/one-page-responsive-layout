@@ -150,9 +150,15 @@ main section div .red-btn {
     background-color: #852406;
 }
 
-main section .col-2 {
+main section .row-2 {
+    display: table;
+    margin: 0 auto;
+    text-align: center;
+}
+
+main section div .col-2 {
     float: left;
-    /* max-width: 360px;
-    margin: 70px 15px 0;
-    background-color: #f2f2f2; */
+    max-width: 555px;
+    margin: 60px 15px 0;
+    background-color: #f2f2f2;
 }
