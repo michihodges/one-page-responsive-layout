@@ -1,3 +1,5 @@
+/* GENERAL STYLING */
+
 html {
     background: url(one-page-responsive-layout_template.png);
     background-repeat: no-repeat;
@@ -9,6 +11,13 @@ body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
 }
+
+img {
+    vertical-align: middle;
+}
+
+/* MODULAR STYLING */
+/* NAVBAR */
 
 nav {
     background-color: #383E4C;
@@ -42,6 +51,9 @@ nav ul li a {
     color: #fff;
     line-height: 20px;
 }
+
+/* MODULAR STYLING */
+/* HEADER */
 
 header {
   background-image: url("img/bg-1.jpg");
@@ -82,40 +94,42 @@ header .intro h2 {
     letter-spacing: 0.02em;
 }
 
+/* MODULAR STYLING */
+/* MAIN */
+
 main {
     position: relative;
     background-color: white;
 }
 
-main section .row-1 {
+/* MODULAR STYLING */
+/* SECTION ROW 1 */
+
+section .row-1 {
     display: table;
     margin: 0 auto;
     text-align: center;
 }
 
-main section div .col-3 {
+section .row-1 .col-3 {
     float: left;
     max-width: 360px;
     margin: 70px 15px 0;
     background-color: #f2f2f2;
 }
 
-main section div img {
-    vertical-align: middle;
-}
-
-main section .row-1 h3, p {
+section .row-1 .col-3 h3, p {
     padding: 0 20px;
     text-align: left;
 }
 
-main section div h3 {
+section .row-1 .col-3 h3 {
     margin: 20px 0 10px;
     font-size: 20px;
     color: #666;
 }
 
-main section div p {
+section .row-1 .col-3 p {
     margin: 0;
     padding-bottom: 25px;
     font-size: 14px;
@@ -123,45 +137,54 @@ main section div p {
     color: #333;
 }
 
-main section div .green-h2 {
+/* MODULAR STYLING */
+/* BUTTON */
+
+section .row-1 .col-3 .green-h2 {
     color: #178A27;
 }
 
-main section div .blue-h2 {
+section .row-1 .col-3 .blue-h2 {
     color: #1686C1;
 }
 
-main section div button {
+section .row-1 .col-3 button {
     margin: 0 0 30px 0;
     border: none;
     border-radius: 5px;
     padding: 10px 30px;
     font-size: 18px;
+    text-transform: capitalize;
+    /* letter-spacing: 0.02em; */
+    letter-spacing: 0.05em;
 }
 
-main section div .btn {
+section .row-1 .col-3 .btn {
     color: white;
 }
 
-main section div .green-btn {
+section .row-1 .col-3 .green-btn {
     background-color: #178A27;
 }
 
-main section div .blue-btn {
+section .row-1 .col-3 .blue-btn {
     background-color: #1686C1;
 }
 
-main section div .red-btn {
+section .row-1 .col-3 .red-btn {
     background-color: #852406;
 }
 
-main section .row-2 {
+/* MODULAR STYLING */
+/* SECTION ROW 2 */
+
+section .row-2 {
     display: table;
     margin: 0 auto;
     text-align: center;
 }
 
-main section div .col-2 {
+section .row-2 .col-2 {
     float: left;
     max-width: 555px;
     margin: 60px 15px 0;
