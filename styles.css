@@ -105,31 +105,35 @@ main {
 /* MODULAR STYLING */
 /* SECTION ROW 1 */
 
-section .row-1 {
+.section-1 {
+    padding: 70px 0 60px;
+}
+
+.section-1 .row-1 {
     display: table;
     margin: 0 auto;
     text-align: center;
 }
 
-section .row-1 .col-3 {
+.section-1 .row-1 .col-3 {
     float: left;
     max-width: 360px;
-    margin: 70px 15px 0;
+    margin: 0 15px;
     background-color: #f2f2f2;
 }
 
-section .row-1 .col-3 h3, p {
+.section-1 .row-1 .col-3 h3, p {
     padding: 0 20px;
     text-align: left;
 }
 
-section .row-1 .col-3 h3 {
+.section-1 .row-1 .col-3 h3 {
     margin: 20px 0 10px;
     font-size: 20px;
     color: #666;
 }
 
-section .row-1 .col-3 p {
+.section-1 .row-1 .col-3 p {
     margin: 0;
     padding-bottom: 25px;
     font-size: 14px;
