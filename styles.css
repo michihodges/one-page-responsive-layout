@@ -57,8 +57,8 @@ nav ul li a {
 
 header {
   background-image: url("img/bg-1.jpg");
-  /* background-position: center center; */
-  background-position: 100% -92px;
+  background-position: center center;
+  /* background-position: 100% -92px; */
   background-repeat: no-repeat;
   background-size: cover;
   /* padding: 235px 0; */
