@@ -16,6 +16,19 @@ img {
     vertical-align: middle;
 }
 
+.bg {
+    /* min-height: 100vh; */
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% auto;
+}
+
+.bg.bg-1 {
+    background-image: url("img/bg-1.jpg");
+}
+
 /* MODULAR STYLING */
 /* NAVBAR */
 
@@ -54,19 +67,6 @@ nav ul li a {
 
 /* MODULAR STYLING */
 /* HEADER */
-
-header {
-  background-image: url("img/bg-1.jpg");
-  background-position: center center;
-  /* background-position: 100% -92px; */
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* padding: 235px 0; */
-  /* margin-bottom: 60px; */
-  background-attachment: fixed;
-  background-size: 100% auto;
-  /* opacity: 0.5; */
-}
 
 header .intro {
     position: relative;
