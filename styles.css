@@ -29,10 +29,14 @@ img {
     background-image: url("img/bg-1.jpg");
 }
 
-/* MODULAR STYLING */
-/* NAVBAR */
+.bg.bg-2 {
+    background-image: url("img/bg-2.jpg");
+}
 
-nav {
+/* MODULAR STYLING */
+/* HEADER */
+
+header nav {
     background-color: #383E4C;
     /* background-color: magenta; */
     position: fixed;
@@ -43,13 +47,13 @@ nav {
     z-index: 5;
 }
 
-nav ul {
+header nav ul {
     display: table;
     margin: 0 auto;
     padding: 0;
 }
 
-nav ul li {
+header nav ul li {
     display: inline;
     float: left;
     margin: 0 10px;
@@ -57,7 +61,7 @@ nav ul li {
     padding: 15px 25px 13px;
 }
 
-nav ul li a {
+header nav ul li a {
     text-decoration: none;
     text-transform: capitalize;
     font-size: 20px;
@@ -68,13 +72,36 @@ nav ul li a {
 /* MODULAR STYLING */
 /* HEADER */
 
-header .intro {
+/* header .intro {
+    position: relative;
+    text-align: center;
+    padding: 245px 0 240px;
+} */
+
+.intro {
     position: relative;
     text-align: center;
     padding: 245px 0 240px;
 }
 
-header .intro h1 {
+/* header .intro h1 {
+    margin: 0;
+    font-weight: 400;
+    font-size: 70px;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 2px 2px #000;
+} */
+
+/* MODULAR STYLING */
+/* MAIN */
+
+/* main {
+    position: relative;
+    background-color: white;
+} */
+
+.intro h1 {
     margin: 0;
     font-weight: 400;
     font-size: 70px;
@@ -83,7 +110,7 @@ header .intro h1 {
     text-shadow: 2px 2px #000;
 }
 
-header .intro h2 {
+/* header .intro h2 {
     margin: 0;
     font-weight: 400;
     color: #fff;
@@ -92,14 +119,17 @@ header .intro h2 {
     position: relative;
     font-size: 1.5em;
     letter-spacing: 0.02em;
-}
+} */
 
-/* MODULAR STYLING */
-/* MAIN */
-
-main {
+.intro h2 {
+    margin: 0;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+    top: -2px;
     position: relative;
-    background-color: white;
+    font-size: 1.5em;
+    letter-spacing: 0.02em;
 }
 
 /* MODULAR STYLING */
