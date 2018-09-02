@@ -6,13 +6,21 @@
     min-height: 4449px;
 } */
 
-body {
+html {
     box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
 }
 
 img {
+    width: 100%;
     vertical-align: middle;
 }
 
@@ -30,9 +38,17 @@ img {
     background-position: center center;
     /* z-index: 1; */
 
-    background-size: 100% auto;
+    /* background-size: 100% auto; */
     background-attachment: fixed;
 }
+
+::placeholder {
+    font-size: 14px;
+    color: #000;
+}
+
+/* MODULAR STYLING */
+/* BACKGROUND IMAGES */
 
 .cd-fixed-bg.cd-fixed-bg-1 {
     background-image: url("img/bg-1.jpg");
@@ -42,12 +58,26 @@ img {
     background-image: url("img/bg-2.jpg");
 }
 
+.cd-fixed-bg.cd-fixed-bg-3 {
+    background-image: url("img/bg-3.jpg");
+}
+
 /* MODULAR STYLING */
-/* HEADER */
+/* HEADER AND NAV */
 
 header nav {
+    display: none;
+}
+
+header menu {
+    background-color: #333;
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+}
+
+/* header nav {
     background-color: #383E4C;
-    /* background-color: magenta; */
     position: fixed;
     top: 0;
     text-align: center;
@@ -76,103 +106,72 @@ header nav ul li a {
     font-size: 20px;
     color: #fff;
     line-height: 20px;
-}
-
-/* MODULAR STYLING */
-/* HEADER */
-
-/* header .intro {
-    position: relative;
-    text-align: center;
-    padding: 245px 0 240px;
-} */
-
-.intro {
-    position: relative;
-    text-align: center;
-    padding: 245px 0 240px;
-}
-
-/* header .intro h1 {
-    margin: 0;
-    font-weight: 400;
-    font-size: 70px;
-    color: #fff;
-    text-transform: uppercase;
-    text-shadow: 2px 2px #000;
 } */
 
 /* MODULAR STYLING */
-/* MAIN */
-
-/* main {
-    position: relative;
-    background-color: white;
-} */
-
-.intro h1 {
-    margin: 0;
-    font-weight: 400;
-    font-size: 70px;
-    color: #fff;
-    text-transform: uppercase;
-    text-shadow: 2px 2px #000;
-}
-
-/* header .intro h2 {
-    margin: 0;
-    font-weight: 400;
-    color: #fff;
-    text-transform: capitalize;
-    top: -2px;
-    position: relative;
-    font-size: 1.5em;
-    letter-spacing: 0.02em;
-} */
-
-.intro h2 {
-    margin: 0;
-    font-weight: 400;
-    color: #fff;
-    text-transform: capitalize;
-    top: -2px;
-    position: relative;
-    font-size: 1.5em;
-    letter-spacing: 0.02em;
-}
-
-/* MODULAR STYLING */
-/* SECTION ROW 1 */
+/* SECTION 1 */
 
 .section-1 {
+    padding: 245px 0 240px;
+}
+
+.section-1 .intro {
+    position: relative;
+    text-align: center;
+}
+
+.section-1 .intro h1 {
+    margin: 0;
+    font-weight: 400;
+    font-size: 70px;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 2px 2px #000;
+}
+
+.section-1 .intro h2 {
+    margin: 0;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+    top: -2px;
+    position: relative;
+    font-size: 1.5em;
+    letter-spacing: 0.02em;
+}
+
+/* MODULAR STYLING */
+/* SECTION 2 ROW 1 */
+
+.section-2 {
     padding: 70px 0 60px;
 }
 
-.section-1 .row-1 {
+.section-2 .row-1 {
     display: table;
     margin: 0 auto;
     text-align: center;
 }
 
-.section-1 .row-1 .col-3 {
+.section-2 .row-1 .col-3 {
     float: left;
     max-width: 360px;
     margin: 0 15px;
     background-color: #f2f2f2;
 }
 
-.section-1 .row-1 .col-3 h3, p {
+.section-2 .row-1 .col-3 h3, .section-2 .row-1 .col-3 p {
     padding: 0 20px;
     text-align: left;
 }
 
-.section-1 .row-1 .col-3 h3 {
+.section-2 .row-1 .col-3 h3 {
     margin: 20px 0 10px;
     font-size: 20px;
     color: #666;
 }
 
-.section-1 .row-1 .col-3 p {
+.section-2 .row-1 .col-3 p {
     margin: 0;
     padding-bottom: 25px;
     font-size: 14px;
@@ -181,17 +180,17 @@ header nav ul li a {
 }
 
 /* MODULAR STYLING */
-/* BUTTON */
+/* SECTION 2 ROW 1 BUTTONS */
 
-section .row-1 .col-3 .green-h2 {
+.section-2 .row-1 .col-3 .green-h2 {
     color: #178A27;
 }
 
-section .row-1 .col-3 .blue-h2 {
+.section-2 .row-1 .col-3 .blue-h2 {
     color: #1686C1;
 }
 
-section .row-1 .col-3 button {
+.section-2 .row-1 .col-3 button {
     margin: 0 0 30px 0;
     border: none;
     border-radius: 5px;
@@ -202,32 +201,32 @@ section .row-1 .col-3 button {
     letter-spacing: 0.05em;
 }
 
-section .row-1 .col-3 .btn {
+.section-2 .row-1 .col-3 .btn {
     color: white;
 }
 
-section .row-1 .col-3 .green-btn {
+.section-2 .row-1 .col-3 .green-btn {
     background-color: #178A27;
 }
 
-section .row-1 .col-3 .blue-btn {
+.section-2 .row-1 .col-3 .blue-btn {
     background-color: #1686C1;
 }
 
-section .row-1 .col-3 .red-btn {
+.section-2 .row-1 .col-3 .red-btn {
     background-color: #852406;
 }
 
 /* MODULAR STYLING */
-/* SECTION ROW 2 */
+/* SECTION 2 ROW 2 */
 
-section .row-2 {
+.section-2 .row-2 {
     display: table;
     margin: 0 auto;
     text-align: center;
 }
 
-section .row-2 .col-2 {
+.section-2 .row-2 .col-2 {
     float: left;
     max-width: 555px;
     margin: 60px 15px 0;
@@ -235,18 +234,15 @@ section .row-2 .col-2 {
     background-color: #f2f2f2;
 }
 
-section .row-2 .col-2 h3, p {
-    /* text-align: left; */
-}
-
-section .row-2 .col-2 h3 {
+.section-2 .row-2 .col-2 h3 {
     margin: 20px 0 10px;
     padding: 0 20px;
     font-size: 20px;
     color: #666;
+    text-transform: capitalize;
 }
 
-section .row-2 .col-2 p {
+.section-2 .row-2 .col-2 p {
     margin: 0;
     padding: 27px 27px 16px 27px;
     text-align: left;
@@ -255,7 +251,10 @@ section .row-2 .col-2 p {
     color: #333;
 }
 
-section .row-2 .col-2 button {
+/* MODULAR STYLING */
+/* SECTION 2 ROW 2 BUTTON */
+
+.section-2 .row-2 .col-2 button {
     margin-left: 225px;
     border-radius: 10px;
     padding: 12px 30px;
@@ -263,4 +262,260 @@ section .row-2 .col-2 button {
     font-size: 18px;
     letter-spacing: 0.03em;
     color: #666;
+}
+
+/* MODULAR STYLING */
+/* SECTION 3 */
+
+.section-3 {
+    padding: 65px 0 85px;
+}
+
+.section-3 .services {
+    position: relative;
+    text-align: center;
+}
+
+.section-3 .services h2 {
+    margin: 0 0 20px 0;
+    font-weight: 400;
+    font-size: 36px;
+    color: #fff;
+    text-transform: capitalize;
+    text-shadow: 2px 2px #aaa;
+}
+
+.section-3 .services h3 {
+    margin: 0;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+    top: -2px;
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+}
+
+/* MODULAR STYLING */
+/* SECTION 4 */
+
+.section-4 {
+    padding: 60px 0;
+}
+
+.section-4 .row-1 {
+    display: table;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-4 .row-1 .col-4 {
+    float: left;
+    max-width: 260px;
+    height: 505px;
+    margin: 0 16.66px 30px;
+    background-color: #f2f2f2;
+}
+
+.section-4 .row-1 .col-4 h3 {
+    margin: 20px 0 10px;
+    padding: 0 20px;
+    font-size: 20px;
+    color: #666;
+    text-transform: capitalize;
+}
+
+.section-4 .row-1 .col-4 p {
+    margin: 0;
+    padding: 10px 20px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.6em;
+    color: #333;
+}
+
+.section-4 .row-1 .col-4 button {
+    /* margin-left: 225px; */
+    margin: 15px 0 20px;
+    border-radius: 10px;
+    padding: 12px 30px;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    color: #666;
+    text-transform: capitalize;
+}
+
+.section-4 .row-2 {
+    display: table;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.section-4 .row-2 .col-1 {
+    float: left;
+    max-width: 1140px;
+    margin: 0 15px;
+    background-color: #f2f2f2;
+}
+
+.section-4 .row-2 .col-1 .container {
+    padding: 30px;
+}
+
+/* .section-4 .row-2 .col-1 h3, p {
+    padding: 0 30px;
+} */
+
+.section-4 .row-2 .col-1 .container h3 {
+    margin: 20px 0 10px;
+    font-size: 20px;
+    color: #666;
+    text-transform: capitalize;
+}
+
+.section-4 .row-2 .col-1 .container p {
+    margin: 0 0 10px;
+    font-size: 14px;
+    line-height: 1.6em;
+    color: #333;
+}
+
+.section-4 .row-2 .col-1 .container button {
+    margin: 15px 0 0 0;
+    border-radius: 10px;
+    padding: 12px 30px;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    color: #666;
+    text-transform: capitalize;
+}
+
+.section-5 {
+    padding: 60px;
+}
+
+.section-5 .contact-form {
+    position: relative;
+    text-align: center;
+}
+
+.section-5 .contact-form h2 {
+    margin: 0 0 30px 0;
+    font-weight: 400;
+    font-size: 36px;
+    color: #fff;
+    text-transform: capitalize;
+    text-shadow: 2px 2px #333;
+}
+
+.section-5 .contact-form p {
+    display: inline-block;
+    max-width: 720px;
+    background: rgba(242, 242, 242, 0.4);
+    border-radius: 5px;
+    padding: 20px 48.5px;
+    margin: 0 0 20px 0;
+    line-height: 1.6em;
+}
+
+.section-5 .contact-form form {
+    display: inline-block;
+    width: 100%;
+}
+
+.section-5 .contact-form form .container {
+    display: inline-block;
+    max-width: 720px;
+}
+
+.section-5 .contact-form form .container .content {
+    display: inline-block;
+    float: left;
+    width: 50%;
+}
+
+.section-5 .contact-form form .container .content-left {
+    padding-right: 15px;
+}
+
+.section-5 .contact-form form .container .content-right {
+    padding-left: 15px;
+}
+
+.section-5 .contact-form form .container .content input {
+    float: left;
+    width: 345px;
+    height: 34px;
+    background: rgba(242, 242, 242, 0.4);
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 12px;
+    outline: none;
+    font-size: 14px;
+}
+
+.section-5 .contact-form form .container .content textarea {
+    float: left;
+    width: 345px;
+    height: 132px;
+    background: rgba(242, 242, 242, 0.4);
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-size: 14px;
+}
+
+.section-5 .contact-form form .container .content button {
+    float: left;
+    background-color: #262628;
+    color: #fff;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+/* MEDIAQUERIES */
+
+@media only screen and (min-width: 768px) {
+    header nav {
+        display: block;
+        background-color: #383E4C;
+        /* background-color: magenta; */
+        position: fixed;
+        top: 0;
+        text-align: center;
+        width: 100%;
+        padding: 10px 0 16px 0;
+        z-index: 5;
+    }
+
+    header nav ul {
+        display: table;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    header nav ul li {
+        display: inline;
+        float: left;
+        margin: 0 10px;
+        border: 1px solid #646d7c;
+        padding: 15px 25px 13px;
+    }
+
+    header nav ul li a {
+        text-decoration: none;
+        text-transform: capitalize;
+        font-size: 20px;
+        color: #fff;
+        line-height: 20px;
+    }
+
+    header menu {
+        display: none;
+    }
 }
