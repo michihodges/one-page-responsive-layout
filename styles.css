@@ -73,7 +73,18 @@ header menu {
     background-color: #333;
     position: relative;
     float: right;
-    padding: 9px 10px;
+    padding: 9px 11px;
+    border-radius: 4px;
+    margin: 8px 15px 8px 0;
+}
+
+header menu span {
+    display: block;
+    background-color: #fff;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    margin-bottom: 4px;
 }
 
 /* header nav {
