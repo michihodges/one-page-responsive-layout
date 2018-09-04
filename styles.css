@@ -71,11 +71,13 @@ header nav {
 
 header menu {
     background-color: #333;
-    position: relative;
-    float: right;
-    padding: 9px 11px;
+    position: fixed;
+    /* float: right; */
+    top: 8px;
+    right: 15px;
+    padding: 10px 11px;
     border-radius: 4px;
-    margin: 8px 15px 8px 0;
+    margin: 0;
 }
 
 header menu span {
@@ -85,6 +87,10 @@ header menu span {
     height: 2px;
     border-radius: 1px;
     margin-bottom: 4px;
+}
+
+header menu span:last-child {
+    margin-bottom: 0;
 }
 
 /* header nav {
@@ -487,6 +493,54 @@ header nav ul li a {
     padding: 10px 30px;
     font-size: 18px;
     text-transform: capitalize;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 35px 0 30px;
+}
+
+footer h2 {
+    margin: 0;
+    margin-bottom: 25px;
+    padding: 0 15px;
+    font-weight: 500;
+    font-size: 32px;
+    font-style: italic;
+    line-height: 1.1;
+    color: #666;
+}
+
+footer .content {
+    /* font-weight: 500; */
+    margin: 0;
+    padding: 0 15px;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 1.6em;
+    color: #999;
+}
+
+footer hr {
+    margin: 50px 0 30px 0;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+footer .copyright {
+    margin: 0;
+    padding: 0 15px;
+    font-size: 12px;
+    line-height: 1.6em;
+    color: #666;
+}
+
+footer .copyright a {
+    text-decoration: none;
+    color: #337ab7;
+    cursor: pointer;
 }
 
 /* MEDIAQUERIES */
