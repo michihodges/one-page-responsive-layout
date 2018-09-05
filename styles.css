@@ -33,9 +33,10 @@ img {
 
     /* position: relative; */
     /* min-height: 100vh; */
-    background-size: cover;
+    /*background-size: cover; */
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: center center;
+    /* background-position: center center; */
     /* z-index: 1; */
 
     /* background-size: 100% auto; */
@@ -65,10 +66,6 @@ img {
 /* MODULAR STYLING */
 /* HEADER AND NAV */
 
-header nav {
-    display: none;
-}
-
 header menu {
     background-color: #333;
     position: fixed;
@@ -93,43 +90,18 @@ header menu span:last-child {
     margin-bottom: 0;
 }
 
-/* header nav {
-    background-color: #383E4C;
-    position: fixed;
-    top: 0;
-    text-align: center;
-    width: 100%;
-    padding: 10px 0 16px 0;
-    z-index: 5;
+header nav {
+    display: none;
 }
-
-header nav ul {
-    display: table;
-    margin: 0 auto;
-    padding: 0;
-}
-
-header nav ul li {
-    display: inline;
-    float: left;
-    margin: 0 10px;
-    border: 1px solid #646d7c;
-    padding: 15px 25px 13px;
-}
-
-header nav ul li a {
-    text-decoration: none;
-    text-transform: capitalize;
-    font-size: 20px;
-    color: #fff;
-    line-height: 20px;
-} */
 
 /* MODULAR STYLING */
 /* SECTION 1 */
 
 .section-1 {
-    padding: 245px 0 240px;
+    /* padding: 245px 0 240px; */
+    padding: 55px 0 50px;
+    height: 200px;
+    overflow: hidden;
 }
 
 .section-1 .intro {
@@ -140,7 +112,8 @@ header nav ul li a {
 .section-1 .intro h1 {
     margin: 0;
     font-weight: 400;
-    font-size: 70px;
+    /* font-size: 70px; */
+    font-size: 55px;
     color: #fff;
     text-transform: uppercase;
     text-shadow: 2px 2px #000;
@@ -543,9 +516,66 @@ footer .copyright a {
     cursor: pointer;
 }
 
-/* MEDIAQUERIES */
+/* MEDIA QUERIES */
+/* MOBILE WIDE */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .section-1 {
+        padding: 95px 0 110px;
+    }
+
+    .section-1 .intro h1 {
+        font-size: 70px;
+    }
+}
+
+/* MEDIA QUERIES */
+/* TABLET */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    header nav {
+        display: block;
+        background-color: #383E4C;
+        /* background-color: magenta; */
+        position: fixed;
+        top: 0;
+        text-align: center;
+        width: 100%;
+        padding: 6px 0 12px 0;
+        z-index: 5;
+    }
+
+    header nav ul {
+        display: table;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    header nav ul li {
+        display: inline;
+        float: left;
+        margin: 0 6px;
+        border: 1px solid #646d7c;
+        padding: 14px 25px 14px;
+    }
+
+    header nav ul li a {
+        text-decoration: none;
+        text-transform: capitalize;
+        font-size: 16px;
+        color: #fff;
+        line-height: 20px;
+    }
+
+    header menu {
+        display: none;
+    }
+}
+
+/* MEDIA QUERIES */
+/* DESKTOP */
+
+@media only screen and (min-width: 992px) {
     header nav {
         display: block;
         background-color: #383E4C;
@@ -579,8 +609,4 @@ footer .copyright a {
         color: #fff;
         line-height: 20px;
     }
-
-    header menu {
-        display: none;
-    }
-}
+  }
