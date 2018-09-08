@@ -312,7 +312,11 @@ header nav {
     text-align: center;
 }
 
-.section-4 .row-1 .col-4 {
+.section-4 .row-1 .container {
+    width: 100%;
+}
+
+.section-4 .row-1 .container .col-4 {
     /* float: left; */
     max-width: 260px;
     height: 505px;
@@ -320,7 +324,7 @@ header nav {
     background-color: #f2f2f2;
 }
 
-.section-4 .row-1 .col-4:first-child {
+.section-4 .row-1 .container .col-4:first-child {
     /* float: left; */
     max-width: 260px;
     height: 505px;
@@ -328,14 +332,14 @@ header nav {
     background-color: #f2f2f2;
 }
 
-.section-4 .row-1 .col-4:last-child {
+.section-4 .row-1 .container .col-4:last-child {
     max-width: 260px;
     height: 505px;
     margin: 0 15px 30px 16.66px;
     background-color: #f2f2f2;
 }
 
-.section-4 .row-1 .col-4 h3 {
+.section-4 .row-1 .container .col-4 h3 {
     margin: 20px 0 10px;
     padding: 0 20px;
     font-size: 20px;
@@ -343,7 +347,7 @@ header nav {
     text-transform: capitalize;
 }
 
-.section-4 .row-1 .col-4 p {
+.section-4 .row-1 .container .col-4 p {
     margin: 0;
     padding: 10px 20px;
     text-align: left;
