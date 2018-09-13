@@ -309,7 +309,6 @@ header nav {
 .section-4 .row-1 {
     display: table;
     margin: 0 auto;
-    /* padding: 0 15px; */
     text-align: center;
 }
 
@@ -366,32 +365,31 @@ header nav {
     text-align: left;
 }
 
-.section-4 .row-2 .col-1 {
+.section-4 .row-2 .container .col-1 {
     float: left;
-    max-width: 1140px;
     margin: 0 15px;
     background-color: #f2f2f2;
 }
 
-.section-4 .row-2 .col-1 .container {
+.section-4 .row-2 .container .col-1 .wrapper {
     padding: 30px;
 }
 
-.section-4 .row-2 .col-1 .container h3 {
+.section-4 .row-2 .container .col-1 .wrapper h3 {
     margin: 20px 0 10px;
     font-size: 20px;
     color: #666;
     text-transform: capitalize;
 }
 
-.section-4 .row-2 .col-1 .container p {
+.section-4 .row-2 .container .col-1 .wrapper p {
     margin: 0 0 10px;
     font-size: 14px;
     line-height: 1.6em;
     color: #333;
 }
 
-.section-4 .row-2 .col-1 .container button {
+.section-4 .row-2 .container .col-1 .wrapper button {
     margin: 15px 0 0 0;
     border-radius: 10px;
     padding: 12px 30px;
@@ -492,6 +490,7 @@ header nav {
     text-transform: capitalize;
 }
 
+/* MODULAR STYLING */
 /* FOOTER */
 
 footer {
@@ -566,27 +565,6 @@ footer .copyright a {
         float: left;
         width: 50%;
     }
-
-    /* .section-4 .row-1 .container .wrapper {
-        float: left;
-        width: 50%;
-    }
-    .section-4 .row-1 .container {
-        float: left;
-        width: 50%;
-        margin: 0 auto;
-    } */
-    /* .section-4 .row-1 .container .content-left {
-        float: left;
-        padding-right: 15px;
-        width: 50%;
-    }
-
-    .section-4 .row-1 .container .content-right {
-        float: left;
-        padding-left: 15px;
-        width: 50%;
-    } */
 }
 
 /* MEDIA QUERIES */
@@ -661,6 +639,10 @@ footer .copyright a {
         float: left;
         width: 50%;
     }
+
+    .section-4 .row-2 .container {
+        width: 750px;
+    }
 }
 
 /* MEDIA QUERIES */
@@ -713,11 +695,15 @@ footer .copyright a {
     }
 
     .section-4 .row-1 .container {
-        width: 100%;
+        width: 970px;
     }
 
     .section-4 .row-1 .container .wrapper {
         width: 25%;
+    }
+
+    .section-4 .row-2 .container {
+        width: 970px;
     }
   }
 
@@ -735,5 +721,13 @@ footer .copyright a {
 
       .section-3 {
           padding: 80px 15px 84px;
+      }
+
+      .section-4 .row-1 .container {
+          width: 1170px;
+      }
+
+      .section-4 .row-2 .container {
+          width: 1170px;
       }
   }
