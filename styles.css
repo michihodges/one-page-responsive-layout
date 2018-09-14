@@ -403,7 +403,8 @@ header nav {
 /* SECTION 5 CONTACT FORM */
 
 .section-5 {
-    padding: 60px;
+    /* padding: 60px; */
+    padding: 15px;
 }
 
 .section-5 .contact-form {
