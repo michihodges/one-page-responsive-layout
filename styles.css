@@ -14,7 +14,7 @@ html {
     box-sizing: inherit;
 }
 
-body {
+body, button, input, textarea {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
 }
@@ -166,7 +166,6 @@ header nav {
 
 .section-2 .row-1 .col-3 h3, .section-2 .row-1 .col-3 p {
     padding: 0 20px;
-    text-align: left;
 }
 
 .section-2 .row-1 .col-3 h3 {
@@ -181,6 +180,7 @@ header nav {
     font-size: 14px;
     line-height: 1.6em;
     color: #333;
+    text-align: left;
 }
 
 /* MODULAR STYLING */
@@ -261,10 +261,9 @@ header nav {
 .section-2 .row-2 .col-2 button {
     /* margin-left: 225px; */
     border-radius: 10px;
-    padding: 12px 30px;
+    padding: 10px 30px;
     text-transform: capitalize;
     font-size: 18px;
-    letter-spacing: 0.03em;
     color: #666;
 }
 
@@ -349,9 +348,8 @@ header nav {
     /* margin-left: 225px; */
     margin: 15px 0 20px;
     border-radius: 10px;
-    padding: 12px 30px;
+    padding: 10px 30px;
     font-size: 18px;
-    letter-spacing: 0.03em;
     color: #666;
     text-transform: capitalize;
 }
@@ -392,9 +390,8 @@ header nav {
 .section-4 .row-2 .container .col-1 .wrapper button {
     margin: 15px 0 0 0;
     border-radius: 10px;
-    padding: 12px 30px;
+    padding: 10px 30px;
     font-size: 18px;
-    letter-spacing: 0.03em;
     color: #666;
     text-transform: capitalize;
 }
@@ -404,7 +401,7 @@ header nav {
 
 .section-5 {
     /* padding: 60px; */
-    padding: 100px 15px 60px;
+    padding: 100px 15px 75px;
 }
 
 .section-5 .contact-form {
@@ -413,7 +410,8 @@ header nav {
 }
 
 .section-5 .contact-form h2 {
-    margin: 0 0 30px 0;
+    /* margin: 0 0 30px 0; */
+    margin: 0 0 25px 0;
     font-weight: 400;
     font-size: 36px;
     color: #fff;
@@ -434,8 +432,7 @@ header nav {
 .section-5 .contact-form form {
     /* display: inline-block; */
     /* width: 100%; */
-    all: none;
-    display: inline-block;
+    width: auto;
 }
 
 .section-5 .contact-form form .container {
@@ -448,14 +445,6 @@ header nav {
     /* float: left; */
     /* width: 50%; */
     width: 100%;
-}
-
-.section-5 .contact-form form .container .content-left {
-    /* padding-right: 15px; */
-}
-
-.section-5 .contact-form form .container .content-right {
-    /* padding-left: 15px; */
 }
 
 .section-5 .contact-form form .container .content input {
@@ -492,9 +481,11 @@ header nav {
     color: #fff;
     margin-top: 20px;
     border-radius: 10px;
+    border-color: #ccc;
     padding: 10px 30px;
     font-size: 18px;
     text-transform: capitalize;
+    /* font-family: 'Open Sans', sans-serif; */
 }
 
 /* MODULAR STYLING */
@@ -626,6 +617,10 @@ footer .copyright a {
         margin: 0 15px;
     }
 
+    .section-2 .row-1 .col-3 h3 {
+        text-align: left;
+    }
+
     .section-2 .row-2 .col-2 {
         float: left;
         width: 345px;
@@ -649,6 +644,34 @@ footer .copyright a {
 
     .section-4 .row-2 .container {
         width: 750px;
+    }
+
+    .section-5 {
+        padding-top: 97px;
+    }
+
+    .section-5 .contact-form form .container .content {
+        float: left;
+        width: 50%;
+    }
+
+    .section-5 .contact-form form .container .content-left {
+        padding-right: 15px;
+    }
+
+    .section-5 .contact-form form .container .content-right {
+        padding-left: 15px;
+    }
+
+    .section-5 .contact-form form .container .content input {
+        float: left;
+        width: 345px;
+    }
+
+    .section-5 .contact-form form .container .content textarea {
+        float: left;
+        width: 345px;
+        /* margin-bottom: 15px; */
     }
 }
 
