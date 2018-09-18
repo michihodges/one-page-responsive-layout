@@ -19,6 +19,12 @@ body, button, input, textarea {
     font-family: 'Open Sans', sans-serif;
 }
 
+body {
+    max-width: 1350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 img {
     width: 100%;
     height: auto;
@@ -35,11 +41,12 @@ img {
     /* position: relative; */
     /* min-height: 100vh; */
     /* min-height: 50vh; */
-    /* background-size: cover; */
+    background-size: cover;
     /* background-size: contain; */
     /* background-size: auto 297px; */
     background-repeat: no-repeat;
     /* background-position: center center; */
+    background-position: center;
     /* background-position: 100% auto; */
     /* z-index: 1; */
 
@@ -112,7 +119,8 @@ header nav {
 .section-1 {
     /* padding: 245px 0 240px; */
     /* padding: 55px 0 50px; */
-    padding: 97px 0 92px;
+    /* padding: 97px 0 92px; */
+    padding: 94px 0 89px;
     /* display: flex;
     justify-content: center;
     align-items: center; */
@@ -169,7 +177,7 @@ header nav {
 }
 
 .section-2 .row-1 .col-3 h3 {
-    margin: 20px 0 10px;
+    margin: 17px 0 13px;
     font-size: 20px;
     color: #666;
 }
@@ -180,7 +188,7 @@ header nav {
     font-size: 14px;
     line-height: 1.6em;
     color: #333;
-    text-align: left;
+    /* text-align: left; */
 }
 
 /* MODULAR STYLING */
@@ -195,14 +203,14 @@ header nav {
 }
 
 .section-2 .row-1 .col-3 button {
-    margin: 0 0 30px 0;
+    margin: 0 0 31px 0;
     border: none;
     border-radius: 5px;
-    padding: 10px 30px;
+    padding: 10px 30px 10px;
     font-size: 18px;
     text-transform: capitalize;
     /* letter-spacing: 0.02em; */
-    letter-spacing: 0.05em;
+    /* letter-spacing: 0.05em; */
 }
 
 .section-2 .row-1 .col-3 .btn {
@@ -685,7 +693,7 @@ footer .copyright a {
         position: fixed;
         top: 0;
         text-align: center;
-        width: 100%;
+        max-width: 1350px;
         padding: 10px 0 16px 0;
         z-index: 5;
     }
