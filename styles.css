@@ -238,16 +238,17 @@ header nav {
     text-align: center;
 }
 
-.section-2 .row-2 .col-2 {
-    min-width: 345px;
-    max-width: 555px;
-    margin: 60px 15px 0;
-    padding-bottom: 30px;
-    background-color: #f2f2f2;
+.section-2 .row-2 .col-2:first-child {
+    margin-top: 60px;
+    padding-bottom: 55px;
 }
 
-.section-2 .row-2 .col-2:first-child {
-    padding-bottom: 55px;
+.section-2 .row-2 .col-2 {
+    /* max-width: 376px; */
+    max-width: 555px;
+    margin: 30px 15px 0;
+    padding-bottom: 30px;
+    background-color: #f2f2f2;
 }
 
 .section-2 .row-2 .col-2 h3 {
@@ -635,6 +636,12 @@ footer .copyright a {
 
     .section-2 .row-2 .col-2 {
         float: left;
+        max-width: 345px;
+        margin-top: 60px;
+    }
+
+    .section-2 .row-2 .col-2 p {
+        text-align: left;
     }
 
     .section-3 {
@@ -725,7 +732,7 @@ footer .copyright a {
     }
 
     .section-2 .row-2 .col-2 {
-        width: 455px;
+        max-width: 455px;
     }
 
     .section-2 .row-2 .col-2 button {
@@ -754,7 +761,7 @@ footer .copyright a {
       }
 
       .section-2 .row-2 .col-2 {
-          width: 555px;
+          max-width: 555px;
       }
 
       .section-3 {
