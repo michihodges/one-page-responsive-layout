@@ -240,7 +240,7 @@ header nav {
 
 .section-2 .row-2 .col-2:first-child {
     margin-top: 60px;
-    padding-bottom: 55px;
+    padding-bottom: 56px;
 }
 
 .section-2 .row-2 .col-2 {
@@ -335,13 +335,13 @@ header nav {
 .section-4 .row-1 .container .wrapper .col-4 {
     display: inline-block;
     max-width: 260px;
-    height: 505px;
+    height: 500px;
     margin-bottom: 30px;
     background-color: #f2f2f2;
 }
 
 .section-4 .row-1 .container .wrapper .col-4 h3 {
-    margin: 20px 0 10px;
+    margin: 17px 0 8px;
     padding: 0 20px;
     font-size: 20px;
     color: #666;
@@ -387,7 +387,7 @@ header nav {
 }
 
 .section-4 .row-2 .container .col-1 .wrapper h3 {
-    margin: 20px 0 10px;
+    margin: 17px 0 8px;
     font-size: 20px;
     color: #666;
     text-transform: capitalize;
@@ -414,7 +414,7 @@ header nav {
 
 .section-5 {
     /* padding: 60px; */
-    padding: 100px 15px 75px;
+    padding: 95px 15px 75px;
 }
 
 .section-5 .contact-form {
@@ -638,6 +638,7 @@ footer .copyright a {
         float: left;
         max-width: 345px;
         margin-top: 60px;
+        padding-bottom: 52px;
     }
 
     .section-2 .row-2 .col-2 p {
@@ -659,10 +660,6 @@ footer .copyright a {
 
     .section-4 .row-2 .container {
         width: 750px;
-    }
-
-    .section-5 {
-        padding-top: 97px;
     }
 
     .section-5 .contact-form form .container .content {
@@ -732,7 +729,9 @@ footer .copyright a {
     }
 
     .section-2 .row-2 .col-2 {
+        float: left;
         max-width: 455px;
+        padding-bottom: 30px;
     }
 
     .section-2 .row-2 .col-2 button {
