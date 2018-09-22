@@ -437,7 +437,8 @@ header nav {
     max-width: 720px;
     background: rgba(242, 242, 242, 0.4);
     border-radius: 5px;
-    padding: 20px 48.5px;
+    /* padding: 20px 48.5px; */
+    padding: 20px 15px;
     margin: 0 0 20px 0;
     line-height: 1.6em;
 }
@@ -662,6 +663,11 @@ footer .copyright a {
         width: 750px;
     }
 
+    .section-5 .contact-form p {
+        padding: 20px 0;
+        font-size: 18px;
+    }
+
     .section-5 .contact-form form .container .content {
         float: left;
         width: 50%;
@@ -748,6 +754,11 @@ footer .copyright a {
 
     .section-4 .row-2 .container {
         width: 970px;
+    }
+
+    .section-5 .contact-form p {
+        padding: 20px 15px;
+        font-size: 15px;
     }
   }
 
