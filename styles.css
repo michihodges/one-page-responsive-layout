@@ -435,6 +435,7 @@ header nav {
 .section-5 .contact-form p {
     display: inline-block;
     max-width: 720px;
+    width: 100%;
     background: rgba(242, 242, 242, 0.4);
     border-radius: 5px;
     /* padding: 20px 48.5px; */
@@ -664,6 +665,7 @@ footer .copyright a {
     }
 
     .section-5 .contact-form p {
+        width: 720px;
         padding: 20px 0;
         font-size: 18px;
     }
@@ -784,5 +786,9 @@ footer .copyright a {
 
       .section-4 .row-2 .container {
           width: 1170px;
+      }
+
+      .section-5 .contact-form p {
+          font-size: 16px;
       }
   }
