@@ -85,7 +85,7 @@ img {
 /* HEADER AND NAV */
 
 header menu {
-    background-color: #333;
+    background: #333;
     position: fixed;
     /* float: right; */
     top: 8px;
@@ -94,11 +94,12 @@ header menu {
     border-radius: 4px;
     margin: 0;
     z-index: 1;
+    cursor: pointer;
 }
 
 header menu span {
     display: block;
-    background-color: #fff;
+    background: #fff;
     width: 22px;
     height: 2px;
     border-radius: 1px;
@@ -111,6 +112,45 @@ header menu span:last-child {
 
 header nav {
     display: none;
+    background: #383E4C;
+    position: fixed;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    padding: 6px 0 12px 0;
+    z-index: 1;
+}
+
+header nav ul {
+    display: table;
+    margin: 0 auto;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    float: left;
+    margin: 0 6px;
+    border: 1px solid #646d7c;
+    padding: 14px 25px 14px;
+    cursor: pointer;
+}
+
+header nav ul li:hover {
+    background: #49505F;
+    transition: all 0.3s ease;
+}
+
+header nav ul .nav-active {
+    background: #49505F;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: #fff;
+    line-height: 20px;
 }
 
 /* MODULAR STYLING */
@@ -169,7 +209,7 @@ header nav {
 .section-2 .row-1 .col-3 {
     max-width: 360px;
     margin: 0 15px 30px;
-    background-color: #f2f2f2;
+    background: #f2f2f2;
 }
 
 .section-2 .row-1 .col-3 h3, .section-2 .row-1 .col-3 p {
@@ -209,6 +249,8 @@ header nav {
     padding: 10px 30px 10px;
     font-size: 18px;
     text-transform: capitalize;
+    transition: all 0.3s ease;
+    cursor: pointer;
     /* letter-spacing: 0.02em; */
     /* letter-spacing: 0.05em; */
 }
@@ -218,15 +260,27 @@ header nav {
 }
 
 .section-2 .row-1 .col-3 .green-btn {
-    background-color: #178A27;
+    background: #178A27;
+}
+
+.section-2 .row-1 .col-3 .green-btn:hover {
+    background: #449D44;
 }
 
 .section-2 .row-1 .col-3 .blue-btn {
-    background-color: #1686C1;
+    background: #1686C1;
+}
+
+.section-2 .row-1 .col-3 .blue-btn:hover {
+    background: #31B0D5;
 }
 
 .section-2 .row-1 .col-3 .red-btn {
-    background-color: #852406;
+    background: #852406;
+}
+
+.section-2 .row-1 .col-3 .red-btn:hover {
+    background: #C9302C;
 }
 
 /* MODULAR STYLING */
@@ -248,7 +302,7 @@ header nav {
     max-width: 555px;
     margin: 30px 15px 0;
     padding-bottom: 30px;
-    background-color: #f2f2f2;
+    background: #f2f2f2;
 }
 
 .section-2 .row-2 .col-2 h3 {
@@ -278,6 +332,11 @@ header nav {
     text-transform: capitalize;
     font-size: 18px;
     color: #666;
+    cursor: pointer;
+}
+
+.section-2 .row-2 .col-2 button:hover {
+    background: #E6E6E6;
 }
 
 /* MODULAR STYLING */
@@ -337,7 +396,7 @@ header nav {
     max-width: 260px;
     height: 500px;
     margin-bottom: 30px;
-    background-color: #f2f2f2;
+    background: #f2f2f2;
 }
 
 .section-4 .row-1 .container .wrapper .col-4 h3 {
@@ -365,6 +424,13 @@ header nav {
     font-size: 18px;
     color: #666;
     text-transform: capitalize;
+    cursor: pointer;
+}
+
+.section-4 .row-1 .container .wrapper .col-4 button:hover {
+    background: #e6e6e6;
+    color: #22517b;
+    transition: all 0.3s ease;
 }
 
 /* MODULAR STYLING */
@@ -379,7 +445,7 @@ header nav {
 .section-4 .row-2 .container .col-1 {
     float: left;
     margin: 0 15px;
-    background-color: #f2f2f2;
+    background: #f2f2f2;
 }
 
 .section-4 .row-2 .container .col-1 .wrapper {
@@ -407,6 +473,13 @@ header nav {
     font-size: 18px;
     color: #666;
     text-transform: capitalize;
+    cursor: pointer;
+}
+
+.section-4 .row-2 .container .col-1 .wrapper button:hover {
+    background: #e6e6e6;
+    color: #22517b;
+    transition: all 0.3s ease;
 }
 
 /* MODULAR STYLING */
@@ -414,7 +487,7 @@ header nav {
 
 .section-5 {
     /* padding: 60px; */
-    padding: 95px 15px 75px;
+    padding: 95px 15px 70px;
 }
 
 .section-5 .contact-form {
@@ -492,7 +565,7 @@ header nav {
 
 .section-5 .contact-form form .container .content button {
     float: left;
-    background-color: #262628;
+    background: #262628;
     color: #fff;
     margin-top: 20px;
     border-radius: 10px;
@@ -500,7 +573,14 @@ header nav {
     padding: 10px 30px;
     font-size: 18px;
     text-transform: capitalize;
-    /* font-family: 'Open Sans', sans-serif; */
+    cursor: pointer;
+}
+
+.section-5 .contact-form form .container .content button:hover {
+    background: #e6e6e6;
+    border-color: #adadad;
+    color: #333;
+    transition: all 0.3s ease;
 }
 
 /* MODULAR STYLING */
@@ -587,35 +667,6 @@ footer .copyright a {
 @media only screen and (min-width: 768px) {
     header nav {
         display: block;
-        background-color: #383E4C;
-        position: fixed;
-        top: 0;
-        text-align: center;
-        width: 100%;
-        padding: 6px 0 12px 0;
-        z-index: 5;
-    }
-
-    header nav ul {
-        display: table;
-        margin: 0 auto;
-        padding: 0;
-    }
-
-    header nav ul li {
-        display: inline;
-        float: left;
-        margin: 0 6px;
-        border: 1px solid #646d7c;
-        padding: 14px 25px 14px;
-    }
-
-    header nav ul li a {
-        text-decoration: none;
-        text-transform: capitalize;
-        font-size: 16px;
-        color: #fff;
-        line-height: 20px;
     }
 
     header menu {
@@ -701,7 +752,7 @@ footer .copyright a {
 @media only screen and (min-width: 992px) {
     header nav {
         display: block;
-        background-color: #383E4C;
+        background: #383E4C;
         position: fixed;
         top: 0;
         text-align: center;
