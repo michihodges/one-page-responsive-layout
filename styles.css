@@ -32,28 +32,15 @@ img {
 }
 
 .cd-fixed-bg {
-    /* background-size: cover;
-    background-attachment: fixed;
+    background-size: cover;
+    /* background-attachment: fixed; */
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 100% auto; */
-
-    /* position: relative; */
-    /* min-height: 100vh; */
-    /* min-height: 50vh; */
-    background-size: cover;
-    /* background-size: contain; */
-    /* background-size: auto 297px; */
-    background-repeat: no-repeat;
-    /* background-position: center center; */
-    background-position: center;
-    /* background-position: 100% auto; */
-    /* z-index: 1; */
-
     /* background-size: 100% auto; */
-    background-attachment: fixed;
+    /* background-size: auto 100%; */
 
-    /* background-size: 100% contain; */
+    /* position: absolute; */
+    /* width: 100%; */
 }
 
 ::placeholder {
@@ -66,6 +53,7 @@ img {
 
 .cd-fixed-bg.cd-fixed-bg-1 {
     background-image: url("img/bg-1.jpg");
+    height: 50vh;
     /* min-height: 50vh;
     background-size: auto 100%;
     left: 50%;
@@ -157,34 +145,27 @@ header nav ul li a {
 /* SECTION 1 */
 
 .section-1 {
-    /* padding: 245px 0 240px; */
-    /* padding: 55px 0 50px; */
-    /* padding: 97px 0 92px; */
-    padding: 94px 0 89px;
-    /* display: flex;
+    display: flex;
     justify-content: center;
-    align-items: center; */
+    align-items: center;
 }
 
-.section-1 .intro {
-    position: relative;
-    text-align: center;
-}
-
-.section-1 .intro h1 {
+.section-1 h1 {
     margin: 0;
     font-weight: 400;
     /* font-size: 70px; */
     font-size: 55px;
     color: #fff;
+    text-align: center;
     text-transform: uppercase;
     text-shadow: 2px 2px #000;
 }
 
-.section-1 .intro h2 {
+.section-1 h2 {
     margin: 0;
     font-weight: 400;
     color: #fff;
+    text-align: center;
     text-transform: capitalize;
     text-shadow: 1px 1px #333;
     /* top: -1px; */
@@ -344,6 +325,9 @@ header nav ul li a {
 
 .section-3 {
     padding: 60px 15px 84px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .section-3 .services {
@@ -638,10 +622,10 @@ footer .copyright a {
 /* @media only screen and (min-width: 480px) and (max-width: 767px) */
 @media only screen and (min-width: 480px) {
     .section-1 {
-        padding: 160px 0 155px;
+        /* padding: 160px 0 155px; */
     }
 
-    .section-1 .intro h1 {
+    .section-1 h1 {
         font-size: 70px;
     }
 }
@@ -650,6 +634,10 @@ footer .copyright a {
 /* 521px */
 
 @media only screen and (min-width: 521px) {
+    .cd-fixed-bg.cd-fixed-bg-1 {
+        height: 75vh;
+    }
+
     .section-4 .row-1 .container {
         width: 100%;
     }
@@ -673,8 +661,12 @@ footer .copyright a {
         display: none;
     }
 
+    .cd-fixed-bg.cd-fixed-bg-1 {
+        height: 97vh;
+    }
+
     .section-1 {
-        padding: 245px 0 240px;
+        /* padding: 245px 0 240px; */
     }
 
     .section-2 .row-1 .col-3 {
